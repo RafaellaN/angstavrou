@@ -24,17 +24,18 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <div class="main-header" id="main-header">
-<nav class="mynav">
+<nav class="navbar mynav navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="index-gr.html"  class="navbar-left"> <img class="logo" src="images/logo.jpg">  </a> </div>
+        <!-- <a href="index-gr.html"  class="navbar-left"> <img class="logo" src="images/logo.jpg">  </a> </div> -->
       <div class="collapse navbar-collapse" id="myNavbar">
+        <a href="index-gr.html"> <img class="logo" src="images/logo.jpg">  </a>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="index-gr.html">Home</a></li>
-		  <li><a href="index-gr.html#about">Σχετικά με εμάς</a></li>
+		      <li><a href="index-gr.html#about">Σχετικά με εμάς</a></li>
           <li><a href="index-gr.html#work">Υπηρεσίες</a></li>
-		  <li><a href="choose-cyprus-gr.html">Επιχειρήσεις στην Kύπρο</a></li>
+		      <li><a href="choose-cyprus-gr.html">Επιχειρήσεις στην Kύπρο</a></li>
           <li><a href="index-gr.html#contact">Επικοινωνία</a></li>
         </ul>
       </div>
@@ -116,7 +117,7 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
           <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://www.facebook.com/profile.php?id=100090301842401"><i class="fa fa-facebook"></i></a> </li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
         </ul>
       </div>
@@ -130,6 +131,9 @@
 <script type="text/javascript" src="js/jquery.countTo.js"></script> 
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script> 
 <script>
+  $(function(){
+    $('.selectpicker').selectpicker();
+});
 $(document).ready(function() {
      
       $("#owl-demo").owlCarousel({
